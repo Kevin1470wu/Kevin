@@ -1,11 +1,36 @@
-<div align="center">
+# SumStack: Math Puzzle
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A challenging math-based block elimination game built with React, Tailwind CSS, and Gemini AI.
 
-  <h1>Built with AI Studio</h2>
+## Features
+- **Classic Mode**: Survival challenge where rows are added after every success.
+- **Time Mode**: Beat the clock to prevent new rows from appearing.
+- **AI Tips**: Real-time encouraging tips and math facts powered by Gemini AI.
+- **Responsive Design**: Playable on both mobile and desktop.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Deployment to Vercel
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+1. **Push to GitHub**:
+   - Create a new repository on GitHub.
+   - Initialize git in your local project:
+     ```bash
+     git init
+     git add .
+     git commit -m "Initial commit"
+     git remote add origin <your-github-repo-url>
+     git push -u origin main
+     ```
 
-</div>
+2. **Deploy on Vercel**:
+   - Go to [Vercel](https://vercel.com) and click "Add New" -> "Project".
+   - Import your GitHub repository.
+   - In the **Environment Variables** section, add:
+     - `GEMINI_API_KEY`: Your Google Gemini API Key (get it from [Google AI Studio](https://aistudio.google.com/app/apikey)).
+   - Click **Deploy**.
+
+## Local Development
+
+```bash
+npm install
+npm run dev
+```
